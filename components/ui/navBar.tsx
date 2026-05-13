@@ -6,7 +6,7 @@ import { Zap } from 'lucide-react';
 export default function NavBar() {
   return (
     <nav className="w-full h-16 bg-white dark:bg-black flex">
-      <h2 className="text-2xl font-bold mt-5 ml-5 mb-5 mr-2">Uni-Dash</h2>
+      <h2 className="text-2xl font-bold mt-5 ml-5 mb-5 mr-2">DE-Dash</h2>
       <p className="mt-6"><Zap /></p>
       <ul className="m-6">
         <li>
@@ -21,7 +21,7 @@ export default function NavBar() {
           <Link href={"/about"} className="font-bold">Login</Link>
         </li>
          <li>
-          <Link href={"/about"} className="font-bold bg-[#ff7614] p-2 rounded-xl">Signup</Link>
+          <Link href={"/about"} className="font-bold bg-[#ff7614] p-2 rounded-xl text-white">Signup</Link>
         </li>
       </ul>
     </nav>

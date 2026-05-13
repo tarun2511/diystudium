@@ -56,7 +56,16 @@ const steps = [
   },
 ];
 
-export default function ProgressBar() {
+interface progressBarProps {
+    onApsClick: () => void
+};
+
+export default function ProgressBar({onApsClick}: progressBarProps) {
+  const handleOnClick = (stepText: string) => {
+    if (stepText === "Apply for APS") {
+      onApsClick();
+    };
+  };
   return (
     <>
       <div className="flex flex-col items-center text-center mt-20">
@@ -84,8 +93,9 @@ export default function ProgressBar() {
                           ? "border-[#ff7614]"
                           : "border-gray-300"
                       }`}
+                      onClick={() => handleOnClick(step.text)}
                     >
-                      <Icon size={50}/>
+                      <Icon size={50} />
                     </div>
                   </TooltipTrigger>
 

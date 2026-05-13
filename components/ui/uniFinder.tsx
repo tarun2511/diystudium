@@ -26,9 +26,9 @@ export default function UniFinder() {
          <Image src="/uni1.jpg" alt="University Finder" width={800} height={200} className="rounded-lg" /> */}
       <Card className="max-w-xl w-300 h-100 justify-center shadow-[0_20px_50px_rgba(180,60,0,0.3)] bg-white/90 backdrop-blur-md p-10">
       <CardHeader>
-        <CardTitle className="text-2xl mb-4 flex">Find University<Image src="/icons/german-flag.png" width={28} height={28} alt="University Finder" className="rounded-lg ml-2" /></CardTitle>
+        <CardTitle className="text-2xl mb-4 flex">Find Where You’re Eligible<Image src="/icons/german-flag.png" width={28} height={28} alt="University Finder" className="rounded-lg ml-2" /></CardTitle>
         <CardDescription>
-          <p>Find the perfect university for your studies in Germany.</p>
+          <p>Discover German universities that match your profile.</p>
         </CardDescription>
         <CardAction>
         </CardAction>
