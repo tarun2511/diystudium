@@ -11,9 +11,13 @@ import {
 import { Button } from "./button";
 import Image from "next/image";
 
-export default function UniFinder() {
+interface uniFinderProps {
+    uniFinderRef: React.Ref<HTMLDivElement>;
+}
+
+export default function UniFinder({ uniFinderRef }: uniFinderProps) {
   return (
-    <div className="flex justify-around items-center mt-20 mb-20 h-200 bg-[linear-gradient(315deg,_#F7A959,_#F45707)]">
+    <div ref={uniFinderRef} className="flex justify-around items-center mt-20 mb-20 h-200 bg-[linear-gradient(315deg,_#F7A959,_#F45707)]">
         {/* <div className="flex flex-col">
         <p className="text-4xl font-bold">Find the perfect university for your studies in Germany.</p>
         <p className="text-lg text-gray-600 mb-8"></p>

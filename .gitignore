@@ -42,3 +42,5 @@ next-env.d.ts
 public/*.jpg
 public/icons/german-flag.png
 public/icons/passport.png
+public/freie.png
+public/tum.jpeg

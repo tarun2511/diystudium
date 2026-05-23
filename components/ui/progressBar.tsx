@@ -57,14 +57,17 @@ const steps = [
 ];
 
 interface progressBarProps {
-    onApsClick: () => void
+    onApsClick: () => void;
+    scrollToUniFinder: () => void;
 };
 
-export default function ProgressBar({onApsClick}: progressBarProps) {
+export default function ProgressBar({onApsClick, scrollToUniFinder}: progressBarProps) {
   const handleOnClick = (stepText: string) => {
     if (stepText === "Apply for APS") {
       onApsClick();
-    };
+    } else if (stepText === "Shortlist universities") {
+      scrollToUniFinder();
+    }
   };
   return (
     <>

@@ -6,14 +6,18 @@ import UniFinder from "@/components/ui/uniFinder";
 import Tools from "@/components/ui/Tools";
 import ExploreUnis from "@/components/ui/ExploreUnis";
 import DashboardClient from "@/components/ui/dashBoardClient";
+import Footer from "@/components/ui/footer";
 
 export default function Home() {
 
   return (
     <div className="flex flex-col flex-1 bg-white font-sans dark:bg-black">
       <NavBar />
-      <DashboardClient />
-      <ExploreUnis />
+      <main className="flex-grow">
+        <DashboardClient />
+        <ExploreUnis />
+      </main>
+      <Footer />
     </div>
   );
 }
