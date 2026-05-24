@@ -1,9 +1,17 @@
 "use client";
 import Link from "next/link";
 import { GraduationCap, Globe } from "lucide-react";
+import { Button } from "./button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  const handleToolClick = (toolId: string) => {
+    const element = document.getElementById(toolId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <footer className="w-full border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/50 backdrop-blur-md mt-auto">
@@ -24,9 +32,15 @@ export default function Footer() {
           {/* Links Column 1 */}
           <div className="flex flex-col space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Tools</h4>
-            <Link href="#gradeCalculator" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors">Bavarian Grade Calc</Link>
-            <Link href="#aps-tracker" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors">APS Timeline Track</Link>
-            <Link href="#uni-assist" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors">uni-assist Monitor</Link>
+            <button className="text-sm text-zinc-600 text-left dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors hover:cursor-pointer" onClick={() => handleToolClick("gradeCalculator")}>
+              Bavarian Grade Calc
+            </button>
+            <button className="text-sm text-zinc-600 text-left dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors hover:cursor-pointer" onClick={() => handleToolClick("apsTrends")}>
+              APS Timeline Track
+            </button>
+            <button className="text-sm text-zinc-600 text-left dark:text-zinc-400 hover:text-[#ff7614] dark:hover:text-[#ff7614] transition-colors hover:cursor-pointer" onClick={() => handleToolClick("uniAssistMonitor")}>
+              uni-assist Monitor
+            </button>
           </div>
 
           {/* Links Column 2 */}

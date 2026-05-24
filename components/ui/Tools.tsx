@@ -72,55 +72,9 @@ export default function Tools({ apsRef }: toolsProps) {
             {/* CARD 1: German Grade Calculator */}
             {/* Changed h-120 to min-h-[30rem] to prevent layout squishing */}
             <GradeCalculator />
-            {/* <Card className="relative max-w-xl w-full min-h-[30rem] flex flex-col justify-between p-10 border-white/20 border-[1px] bg-white/15 backdrop-blur-xl shadow-[0_20px_50px_rgba(180,60,0,0.2)] transition-all hover:bg-white/20">
-                <Badge className="bg-[#ff7614] hover:bg-[#ff7614] absolute top-6 right-6">Free</Badge>
-                
-                <CardHeader className="p-0">
-                    <div className="flex items-center gap-x-2">
-                        <CardTitle className="text-2xl">German Grade Calculator</CardTitle>
-                        <Calculator className="text-zinc-700 dark:text-zinc-300" />
-                    </div>
-                    <CardDescription className="text-lg text-gray-600 mt-1">
-                        "Grade Conversion using the Bavarian Formula"
-                    </CardDescription>
-                </CardHeader>
-
-                <CardContent className="flex flex-col space-y-4 p-0 mt-6">
-                    <div className="flex flex-col space-y-1.5">
-                        <label className="text-sm font-medium text-gray-700 ml-1">Minimum Passing Grade</label>
-                        <input
-                            type="text"
-                            placeholder="e.g. 8.5"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7614] bg-white/50"
-                        />
-                    </div>
-                    
-                    <div className="flex flex-col space-y-1.5">
-                        <label className="text-sm font-medium text-gray-700 ml-1">Maximum Grade</label>
-                        <input
-                            type="text"
-                            placeholder="e.g. 10.0"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7614] bg-white/50"
-                        />
-                    </div>
-                    
-                    <div className="flex flex-col space-y-1.5">
-                        <label className="text-sm font-medium text-gray-700 ml-1">Current Overall Grade</label>
-                        <input
-                            type="text"
-                            placeholder="e.g. 9.0"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff7614] bg-white/50"
-                        />
-                    </div>
-                    
-                    <Button variant="outline" className="w-full bg-[#ff7614] text-white hover:bg-[#e66a12] border-none hover:cursor-pointer transition-colors mt-2">
-                        Calculate
-                    </Button>
-                </CardContent>
-            </Card> */}
 
             {/* CARD 2: Track APS Processing Trends */}
-            <Card className="max-w-xl w-full min-h-[30rem] flex flex-col justify-between p-10 border-white/20 border-[1px] bg-white/15 backdrop-blur-xl shadow-[0_20px_50px_rgba(180,60,0,0.2)] transition-all hover:bg-white/20">
+            <Card id="apsTrends" className="max-w-xl w-full min-h-[30rem] flex flex-col justify-between p-10 border-white/20 border-[1px] bg-white/15 backdrop-blur-xl shadow-[0_20px_50px_rgba(180,60,0,0.2)] transition-all hover:bg-white/20">
                 <CardHeader className="p-0">
                     <div className="flex items-center gap-x-2">
                         <CardTitle className="text-2xl">Track APS processing trends</CardTitle>
@@ -177,7 +131,7 @@ export default function Tools({ apsRef }: toolsProps) {
             </Card>
 
             {/* CARD 3: Fully Dynamic Scraped uni-assist Monitor */}
-      <Card className="max-w-xl w-full min-h-[30rem] flex flex-col justify-between p-10 border-white/20 border-[1px] bg-white/15 backdrop-blur-xl shadow-[0_20px_50px_rgba(180,60,0,0.2)] transition-all hover:bg-white/20">
+      <Card id="uniAssistMonitor" className="max-w-xl w-full min-h-[30rem] flex flex-col justify-between p-10 border-white/20 border-[1px] bg-white/15 backdrop-blur-xl shadow-[0_20px_50px_rgba(180,60,0,0.2)] transition-all hover:bg-white/20">
         
         <CardHeader className="p-0">
           <div className="flex items-center justify-between">
