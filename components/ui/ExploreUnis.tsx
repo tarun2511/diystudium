@@ -4,7 +4,7 @@ import { UNIVERSITIES } from "@/data/universities"; // Clean alias import
 
 export default function ExploreUnis() {
   return (
-    <div className="flex flex-col items-center mt-20 min-h-screen px-4 font-sans bg-white dark:bg-zinc-950 transition-colors">
+    <div className="flex flex-col items-center mt-20 mb-20 px-4 font-sans bg-white dark:bg-zinc-950 transition-colors">
       <header className="text-center max-w-2xl">
         <h1 className="text-4xl font-bold mb-4 text-zinc-900 dark:text-zinc-50 tracking-tight">
           Explore Universities

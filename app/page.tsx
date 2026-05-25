@@ -1,12 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+
 import NavBar from "../components/ui/navBar";
-import ProgressBar from "@/components/ui/progressBar";
-import UniFinder from "@/components/ui/uniFinder";
-import Tools from "@/components/ui/Tools";
 import ExploreUnis from "@/components/ui/ExploreUnis";
 import DashboardClient from "@/components/ui/dashBoardClient";
 import Footer from "@/components/ui/footer";
+import WhatsNewCard from "@/components/ui/WhatsNewCard";
 
 export default function Home() {
 
@@ -16,6 +13,7 @@ export default function Home() {
       <main className="flex-grow">
         <DashboardClient />
         <ExploreUnis />
+        <WhatsNewCard />
       </main>
       <Footer />
     </div>

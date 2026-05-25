@@ -62,6 +62,7 @@ export default function gradeCalculator() {
           <input
             type="number"
             step="0.01"
+            min="0"
             placeholder="e.g. 4.0 or 40"
             value={minPass}
             onChange={(e) => setMinPass(e.target.value)}
@@ -74,6 +75,7 @@ export default function gradeCalculator() {
           <input
             type="number"
             step="0.01"
+            min="0"
             placeholder="e.g. 10.0 or 100"
             value={maxGrade}
             onChange={(e) => setMaxGrade(e.target.value)}
@@ -86,6 +88,7 @@ export default function gradeCalculator() {
           <input
             type="number"
             step="0.01"
+            min="0"
             placeholder="e.g. 7.5 or 82"
             value={currentGrade}
             onChange={(e) => setCurrentGrade(e.target.value)}
